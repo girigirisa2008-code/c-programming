@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int bi=0,base=1;
+   while(n>0){
+       int r=n%10;
+       bi=bi+r*base;
+       n=n/10;
+       base=base*2;
+   }
+   printf("%d",bi);
+}
